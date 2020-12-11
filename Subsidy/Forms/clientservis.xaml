@@ -1,0 +1,27 @@
+﻿<Window x:Class="Subsidy.Forms.clientservis"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Subsidy.Forms"
+        mc:Ignorable="d"
+        Title="clientservis" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="55*"/>
+            <RowDefinition Height="292*"/>
+            <RowDefinition Height="72*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="82*"/>
+            <ColumnDefinition Width="643*"/>
+            <ColumnDefinition Width="67*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Horizontal"  Grid.Row="1" Grid.Column="1">
+            <Button Margin="50" x:Name="btzaevlenie" Content="Заявление (общая информация)" Click="btzaevlenie_Click" Width="200" Height="50"/>
+            <Button Margin="50" x:Name="btzaevlenie1" Content="Заявление на субсидию" Click="btzaevlenie1_Click" Width="200" Height="50"/>
+        </StackPanel>
+        <Button x:Name="bthome" Content="назад" Click="bthome_Click"/>
+        <Button Grid.Column="1" Grid.Row="1" x:Name="btgetclient" Content="Список заявлений" Click="btgetclient_Click" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="200" Height="50" />
+    </Grid>
+</Window>

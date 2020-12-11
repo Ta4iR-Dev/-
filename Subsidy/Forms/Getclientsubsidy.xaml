@@ -1,0 +1,34 @@
+﻿<Window x:Class="Subsidy.Forms.Getclientsubsidy"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Subsidy.Forms"
+        mc:Ignorable="d"
+        Title="Getclientsubsidy" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="58*"/>
+            <RowDefinition Height="323*"/>
+            <RowDefinition Height="38*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="67*"/>
+            <ColumnDefinition Width="709*"/>
+            <ColumnDefinition Width="16*"/>
+        </Grid.ColumnDefinitions>
+        <DataGrid Grid.Row="1"  AutoGenerateColumns="False" x:Name="mainGrid"  Grid.Column="1">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding  id}"/>
+                <DataGridTextColumn Header="Фамилия" Binding="{Binding Фамилия_родитель_}"/>
+                <DataGridTextColumn Header="Имя" Binding="{Binding Имя_родитель_}"/>
+                <DataGridTextColumn Header="Отчество" Binding="{Binding Отчество_родитель_}"/>
+                <DataGridTextColumn Header="Фамилия(ребенок)" Binding="{Binding Фамилия_ребенок_}"/>
+                <DataGridTextColumn Header="Имя(ребенок)" Binding="{Binding Имя_ребенок_}"/>
+                <DataGridTextColumn Header="Отчество(ребенок)" Binding="{Binding Отчество_ребенок_}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="BTHome" Content="Назад" Click="BTHome_Click"/>
+
+    </Grid>
+</Window>

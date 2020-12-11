@@ -1,0 +1,29 @@
+﻿<Window x:Class="Subsidy.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Subsidy"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="69*"/>
+            <RowDefinition Height="290*"/>
+            <RowDefinition Height="60*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="8*"/>
+            <ColumnDefinition Width="57*"/>
+            <ColumnDefinition Width="7*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel HorizontalAlignment="Center"  Orientation="Vertical" Grid.Row="1" Grid.Column="1" Width="627">
+            <PasswordBox x:Name="tbpass"  HorizontalAlignment="Center" Margin="149,50,157,10" Width="321" />
+            <Label HorizontalAlignment="Center" Content="пароль"/>
+            <Button x:Name="admin"  Content="Войти как Админ" Click="admin_Click" Margin="2,100,2,1" Height="25" Width="600"  />
+            <Button x:Name="guest"  Content="Войти как Гость" Click="guest_Click"  Margin="2,0,2,3" Height="25" Width="600" />
+        </StackPanel>
+
+    </Grid>
+</Window>

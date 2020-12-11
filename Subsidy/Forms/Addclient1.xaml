@@ -1,0 +1,64 @@
+﻿<Window x:Class="Subsidy.Forms.Addclient1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Subsidy.Forms"
+        mc:Ignorable="d"
+        Title="Addclient1" Height="786.244" Width="800">
+    <Grid  x:Name="mainGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="41*"/>
+            <RowDefinition Height="327*"/>
+            <RowDefinition Height="51*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="61*"/>
+            <ColumnDefinition Width="680*"/>
+            <ColumnDefinition Width="51*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Row="1" Grid.Column="1">
+            <Label Content="Фамилия(родитель)"/>
+            <TextBox x:Name="tbfirstnameR" Text="{Binding Фамилия_родитель_,UpdateSourceTrigger=PropertyChanged}"/>
+
+            <Label Content="Имя(родитель)"/>
+            <TextBox x:Name="tblastnameR" Text="{Binding Имя_родитель_,UpdateSourceTrigger=PropertyChanged}"/>
+
+            <Label Content="Отчество(родитель)"/>
+            <TextBox x:Name="tbPhotomaticR" Text="{Binding Отчество_родитель_,UpdateSourceTrigger=PropertyChanged}"/>
+
+            <Label Content="Серия(паспорт)"/>
+            <TextBox x:Name="tbseriaP" Text="{Binding Серия_паспорта_ ,UpdateSourceTrigger=PropertyChanged}"/>
+
+            <Label Content="Номер(паспорта)"/>
+            <TextBox x:Name="tbnamberP" Text="{Binding Номер_паспотра_,UpdateSourceTrigger=PropertyChanged}"/>
+
+            <Label Content="Тип((паспорт)РФ,)"/>
+            <TextBox x:Name="tbtupP" Text="{Binding Тип__паспотр_РФ_Иностранный__,UpdateSourceTrigger=PropertyChanged}"/>
+
+            <Label Content="Фамилия(ребенок)"/>
+            <TextBox x:Name="tbfirstnameReb" Text="{Binding Фамилия_ребенок_,UpdateSourceTrigger=PropertyChanged}"/>
+
+            <Label Content="Имя(ребенок)"/>
+            <TextBox  x:Name="tblastnameReb" Text="{Binding Имя_ребенок_,UpdateSourceTrigger=PropertyChanged}"/>
+
+            <Label Content="Отчество(ребенок)"/>
+            <TextBox  x:Name="tbPhotomaticReb" Text="{Binding Отчество_ребенок_,UpdateSourceTrigger=PropertyChanged}"/>
+
+            <Label Content="Серия(сведетельство о рожден.)"/>
+            <TextBox x:Name="tbseriaS" Text="{Binding Серия_свидетельство_о_рожд__,UpdateSourceTrigger=PropertyChanged}"/>
+
+            <Label Content="Номер(сведетельство о рожден.)"/>
+            <TextBox x:Name="tbnamberS" Text="{Binding Номер_свидетельство_о_рожд__,UpdateSourceTrigger=PropertyChanged}"/>
+
+            <Label Content="Тип(РФ,Иностанный)"/>
+            <TextBox x:Name="tbtupS"  Text="{Binding Тип_РФ_Иностранный_,UpdateSourceTrigger=PropertyChanged}"/>
+
+            <Label Content="Дата рождения(ребенок)"/>
+            <DatePicker Name="dp" ></DatePicker>
+            
+        </StackPanel>
+        <Button x:Name="btHome" Content="Назад" Click="btHome_Click"/>
+        <Button x:Name="add" Content="Добавить" Click="add_Click" Grid.Column="2" Grid.Row="2"/>
+    </Grid>
+</Window>

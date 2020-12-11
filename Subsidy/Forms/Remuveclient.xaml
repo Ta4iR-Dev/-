@@ -1,0 +1,28 @@
+﻿<Window x:Class="Subsidy.Forms.Remuveclient"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Subsidy.Forms"
+        mc:Ignorable="d"
+        Title="Remuveclient" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="49*"/>
+            <RowDefinition Height="329*"/>
+            <RowDefinition Height="41*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="59*"/>
+            <ColumnDefinition Width="693*"/>
+            <ColumnDefinition Width="40*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Row="1" Grid.Column="1" >
+            <Label Content="Введите ID" />
+            <TextBox x:Name="tbgetid" Text="{Binding id ,UpdateSourceTrigger=PropertyChanged}" />
+            <Button x:Name="btYES" Content="Подтвердить " Click="btYES_Click"  Width="200" Height="50"/>
+        </StackPanel>
+        <Button x:Name="btHOme" Content="Назад" Click="btHOme_Click"/>
+
+    </Grid>
+</Window>
